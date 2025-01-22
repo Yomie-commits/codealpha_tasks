@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3E8D3; 
+    color: #133215;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    background-color: #92B775; 
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #133215; 
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #133215;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #92B775;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+select:hover, button:hover {
+    background-color: #92B775;
+    color: white;
+}
+
+button {
+    background-color: #133215; 
+    color: white;
+    font-size: 16px;
+}
+
+.output, .zodiac-info, .share-section {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
